@@ -1,10 +1,11 @@
 const fs = require('fs');
 const Discord = require('discord.js');
+const TOKEN = require('./bot-token.json');
 const API_KEYS = require('./api-keys.json');
 const fireCommand = require('./commands.js');
 
 const client = new Discord.Client();
-const token = 'NDEzNzA5NjQ2MjEwMDA3MDUy.DWcw4A.rG-hFR-KjZ0rREQ8tz4Oad2OZKY';
+const token = TOKEN.value;
 
 client.on('ready', () => {
   console.log('I be working, my liege!');
