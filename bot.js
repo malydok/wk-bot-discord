@@ -9,7 +9,8 @@ const token = TOKEN.value;
 
 client.on('ready', () => {
   console.log('I be working, my liege!');
-  console.log('Known keys:', API_KEYS);
+
+  client.user.setActivity('Try wk help');
 });
 
 client.on('message', message => {
